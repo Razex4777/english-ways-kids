@@ -117,19 +117,22 @@
 
         // Load all components when DOM is ready
         document.addEventListener('DOMContentLoaded', async function() {
-            // Load components in order
-            await loadComponent('navbar-container', 'navbar.html');
-            await loadComponent('hero-container', 'hero.html');
-            await loadComponent('contact-modal-container', 'contact-modal.html');
-            await loadComponent('about-container', 'about.html');
-            await loadComponent('video-modal-container', 'video-modal.html');
-            await loadComponent('services-container', 'services.html');
-            await loadComponent('programs-container', 'programs.html');
-            await loadComponent('events-container', 'events.html');
-            await loadComponent('faq-container', 'faq.html');
-            await loadComponent('team-container', 'team.html');
-            await loadComponent('testimonials-container', 'testimonials.html');
-            await loadComponent('footer-container', 'footer.html');
+            // Cache busting timestamp
+            const timestamp = Date.now();
+            
+            // Load components in order with cache busting
+            await loadComponent('navbar-container', `navbar.html?v=${timestamp}`);
+            await loadComponent('hero-container', `hero.html?v=${timestamp}`);
+            await loadComponent('contact-modal-container', `contact-modal.html?v=${timestamp}`);
+            await loadComponent('about-container', `about.html?v=${timestamp}`);
+            await loadComponent('video-modal-container', `video-modal.html?v=${timestamp}`);
+            await loadComponent('services-container', `services.html?v=${timestamp}`);
+            await loadComponent('programs-container', `programs.html?v=${timestamp}`);
+            await loadComponent('events-container', `events.html?v=${timestamp}`);
+            await loadComponent('faq-container', `faq.html?v=${timestamp}`);
+            await loadComponent('team-container', `team.html?v=${timestamp}`);
+            await loadComponent('testimonials-container', `testimonials.html?v=${timestamp}`);
+            await loadComponent('footer-container', `footer.html?v=${timestamp}`);
 
             // Initialize Lucide Icons after components are loaded
             lucide.createIcons();
@@ -139,6 +142,12 @@
         });
 
         function initializeScripts() {
+        // Auto-show contact modal when page loads - ALWAYS
+        setTimeout(function() {
+            const contactModal = new bootstrap.Modal(document.getElementById('contactModal'));
+            contactModal.show();
+        }, 1500); // Show after 1.5 seconds
+        
         // Initialize Testimonial Carousel
         if (typeof $ !== 'undefined' && $('.testimonial-carousel').length > 0) {
             $(".testimonial-carousel").owlCarousel({
