@@ -1,0 +1,35 @@
+{
+  "name": "daycare-website-template",
+  "version": "1.0.0",
+  "description": "A modern daycare website template with WhatsApp Bot API integration",
+  "main": "server.js",
+  "scripts": {
+    "dev": "set PORT=3001 && nodemon server.js",
+    "start": "node server.js",
+    "build": "echo 'Static site - no build process needed'",
+    "preview": "set PORT=4000 && node server.js",
+    "static": "live-server --port=3000 --open=/index.html"
+  },
+  "keywords": [
+    "daycare",
+    "website",
+    "template",
+    "bootstrap",
+    "responsive",
+    "whatsapp",
+    "bot",
+    "api"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@lottiefiles/dotlottie-web": "^0.49.0",
+    "axios": "^1.6.0",
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "nodemon": "^3.0.0"
+  }
+}
