@@ -1,26 +1,24 @@
 {
-  "name": "daycare-website-template",
+  "name": "english-way-kids",
   "version": "1.0.0",
-  "description": "A modern daycare website template with WhatsApp Bot API integration",
-  "main": "server.js",
+  "description": "English Way Kids - تعليم اللغة الإنجليزية للأطفال",
+  "main": "index.html",
   "scripts": {
-    "dev": "set PORT=3001 && nodemon server.js",
+    "dev": "node server.js",
     "start": "node server.js",
-    "build": "echo 'Static site - no build process needed'",
-    "preview": "set PORT=4000 && node server.js",
-    "static": "live-server --port=3000 --open=/index.html"
+    "build": "echo 'Build completed successfully'",
+    "preview": "node server.js"
   },
   "keywords": [
-    "daycare",
+    "english",
+    "kids",
+    "education",
     "website",
-    "template",
     "bootstrap",
     "responsive",
-    "whatsapp",
-    "bot",
-    "api"
+    "whatsapp"
   ],
-  "author": "",
+  "author": "English Way Kids",
   "license": "MIT",
   "dependencies": {
     "@lottiefiles/dotlottie-web": "^0.49.0",
