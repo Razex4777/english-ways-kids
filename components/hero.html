@@ -3,12 +3,35 @@
     <div class="container py-5">
         <div class="row g-5 align-items-center">
             <div class="col-lg-7 col-md-12">
-                <h1 class="mb-3 hero-brand-text">
-                    <span class="brand-english">English</span>
-                    <span class="brand-way">Way</span>
-                    <span class="brand-kids">Kids</span>
+                <h1 class="mb-3 display-2 fw-bold" style="font-family: 'Fredoka', Arial, sans-serif; letter-spacing: 1px;">
+                    <span style="color: #FFA500 !important; text-shadow: 1px 1px 2px rgba(0,0,0,0.3); display: inline-block; animation: bounce1 2s ease-in-out infinite;">English</span>
+                    <span style="color: #FFFFFF !important; text-shadow: 1px 1px 2px rgba(0,0,0,0.5); display: inline-block; animation: bounce2 2s ease-in-out infinite 0.3s;">Way</span>
+                    <span style="color: #007BFF !important; text-shadow: 1px 1px 2px rgba(0,0,0,0.3); display: inline-block; animation: bounce3 2s ease-in-out infinite 0.6s;">Kids</span>
                 </h1>
-                <h1 class="mb-4 display-1 text-white">تعلم الإنجليزية<br>بطريقة ممتعة!</h1>
+                
+                <style>
+                @keyframes bounce1 {
+                    0%, 20%, 50%, 80%, 100% { transform: translateY(0) rotate(0deg); }
+                    10% { transform: translateY(-10px) rotate(-2deg); }
+                    30% { transform: translateY(-5px) rotate(1deg); }
+                    40% { transform: translateY(-8px) rotate(-1deg); }
+                }
+                
+                @keyframes bounce2 {
+                    0%, 20%, 50%, 80%, 100% { transform: translateY(0) scale(1); }
+                    10% { transform: translateY(-12px) scale(1.05); }
+                    30% { transform: translateY(-6px) scale(1.02); }
+                    40% { transform: translateY(-10px) scale(1.03); }
+                }
+                
+                @keyframes bounce3 {
+                    0%, 20%, 50%, 80%, 100% { transform: translateY(0) rotate(0deg) scale(1); }
+                    10% { transform: translateY(-15px) rotate(3deg) scale(1.1); }
+                    30% { transform: translateY(-7px) rotate(-1deg) scale(1.05); }
+                    40% { transform: translateY(-12px) rotate(2deg) scale(1.08); }
+                }
+                </style>
+                <h1 class="mb-4 display-1 text-white" style="font-family: 'Montserrat', Arial, sans-serif; text-shadow: 2px 2px 4px rgba(0,0,0,0.5); line-height: 1.2;">تعلم الإنجليزية<br>بطريقة ممتعة!</h1>
                 <p class="text-white mb-5 fs-5">دورات فردية لتعليم اللغة الإنجليزية للأطفال عبر Zoom<br>بأسلوب تفاعلي وممتع يحبه الأطفال</p>
                 <button type="button" class="btn whatsapp-cta px-4 py-3 px-md-5 me-4 btn-border-radius" data-bs-toggle="modal" data-bs-target="#contactModal">
                     <i class="fab fa-whatsapp me-2"></i>احجز جلسة تجريبية

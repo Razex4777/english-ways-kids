@@ -124,8 +124,15 @@ async function sendToWhatsAppBot() {
     const message = document.getElementById('userMessage').value.trim();
     
     // Validate required fields
-    if (!name || !childGender || !phone || !userState) {
-        showAlert('الرجاء ملء جميع الحقول المطلوبة (الاسم، جنس الطفل، رقم الهاتف، المنطقة)', 'error');
+    if (!name || !childGender || !phone || !childAge || !userState) {
+        showAlert('الرجاء ملء جميع الحقول المطلوبة (الاسم، جنس الطفل، رقم الهاتف، عمر الطفل، المنطقة)', 'error');
+        return;
+    }
+    
+    // Validate age
+    const age = parseInt(childAge);
+    if (isNaN(age) || age < 6 || age > 16) {
+        showAlert('عمر الطفل يجب أن يكون بين 6 و 16 سنة فقط', 'error');
         return;
     }
     
@@ -139,9 +146,7 @@ async function sendToWhatsAppBot() {
     whatsappMessage += `📞 رقم الهاتف: ${phone}\n`;
     whatsappMessage += `📍 المنطقة/المحافظة: ${userState}\n`;
     
-    if (childAge) {
-        whatsappMessage += `🧒 عمر الطفل: ${childAge}\n`;
-    }
+    whatsappMessage += `🧒 عمر الطفل: ${childAge} سنة\n`;
     
     if (message) {
         whatsappMessage += `💬 ملاحظات إضافية:\n${message}\n`;

@@ -31,20 +31,15 @@
                             </select>
                         </div>
                         <div class="col-md-6 mb-3">
-                            <label for="childAge" class="form-label fw-bold">عمر الطفل</label>
-                            <select class="form-select form-select-lg border-2 rounded-3" id="childAge">
-                                <option value="">اختر عمر الطفل</option>
-                                <option value="3-5 سنوات">🧒 3-5 سنوات</option>
-                                <option value="6-8 سنوات">👦 6-8 سنوات</option>
-                                <option value="9-12 سنة">👧 9-12 سنة</option>
-                                <option value="13+ سنة">🧑 13+ سنة</option>
-                            </select>
+                            <label for="childAge" class="form-label fw-bold">عمر الطفل *</label>
+                            <input type="number" class="form-control form-control-lg border-2 rounded-3" id="childAge" placeholder="أدخل عمر الطفل" min="6" max="16" step="1" required>
+                            <div class="form-text text-muted">العمر المسموح: من 6 إلى 16 سنة فقط</div>
                     </div>
                     </div>
                     
                     <div class="mb-3">
                         <label for="userState" class="form-label fw-bold">المنطقة/المحافظة *</label>
-                        <input type="text" class="form-control form-control-lg border-2 rounded-3" id="userState" placeholder="مثال: الرياض، جدة، الدمام..." required>
+                        <input type="text" class="form-control form-control-lg border-2 rounded-3" id="userState" placeholder="مثال: الناصرة, كفر قاسم, مجدل شمس" required>
                     </div>
                     
                     <div class="mb-3">
