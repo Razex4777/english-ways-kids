@@ -1,0 +1,86 @@
+/* Animations and Keyframes */
+
+/* Keyframes for background swipe animation */
+@keyframes backgroundSwipeOut {
+    0%, 45% {
+        transform: translateX(0);
+    }
+    50%, 95% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes backgroundSwipeIn {
+    0%, 45% {
+        transform: translateX(100%);
+    }
+    50%, 95% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* Custom animations for English Way Kids */
+@keyframes float {
+    0%, 100% { transform: translateY(0px); }
+    50% { transform: translateY(-10px); }
+}
+
+.floating-logo {
+    animation: float 3s ease-in-out infinite;
+}
+
+/* FAQ Icon Animation */
+@keyframes faqIconFloat {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+/* Navbar animations */
+@keyframes smoothSlideDown {
+    0% {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    50% {
+        transform: translateY(-50%);
+        opacity: 0.5;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes navLinkPulse {
+    0% {
+        box-shadow: 0 5px 15px rgba(74, 0, 128, 0.3);
+    }
+    50% {
+        box-shadow: 0 8px 25px rgba(74, 0, 128, 0.5);
+    }
+    100% {
+        box-shadow: 0 5px 15px rgba(74, 0, 128, 0.3);
+    }
+}
+
+/* Rocket animation */
+@keyframes rocketBounce {
+    0%, 100% { 
+        transform: translateY(0) rotate(0deg); 
+    }
+    50% { 
+        transform: translateY(-8px) rotate(5deg); 
+    }
+}
+
+/* Cloud animation for footer */
+@keyframes cloudFloat {
+    0% { transform: translateX(-100px); }
+    100% { transform: translateX(100px); }
+} 

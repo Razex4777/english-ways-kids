@@ -1,0 +1,14 @@
+/* English Way Kids Custom Branding Variables */
+:root {
+    /* Override Bootstrap color variables */
+    --bs-primary: #3D0066;       /* Deep Purple */
+    --bs-secondary: #FFC300;     /* Bright Yellow */
+    --bs-light: #F8F9FA;         /* Light background */
+    --bs-dark: #3D0066;          /* Dark purple for text */
+    
+    /* Custom brand colors */
+    --ew-purple: #3D0066;
+    --ew-yellow: #FFC300;
+    --ew-light-purple: #5A1A85;
+    --ew-gradient: linear-gradient(135deg, #3D0066 0%, #5A1A85 100%);
+} 

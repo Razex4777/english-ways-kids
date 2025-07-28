@@ -1,0 +1,169 @@
+/* Responsive Design */
+
+/* Responsive modal */
+@media (max-width: 576px) {
+    .modal-dialog {
+        margin: 10px;
+    }
+    
+    .modal-body {
+        padding: 20px;
+    }
+    
+    .modal-header,
+    .modal-footer {
+        padding: 15px 20px;
+    }
+}
+
+/* Responsive logo sizing */
+@media (max-width: 768px) {
+    .navbar-brand-logo {
+        height: 45px;
+        width: 45px;
+    }
+    
+    .hero-img-container img {
+        max-height: 200px !important;
+        width: 200px;
+    }
+    
+    .hero-gradient {
+        background-position: center center;
+        background-attachment: scroll;
+    }
+    
+    .hero-gradient h1 {
+        font-size: 2.5rem !important;
+    }
+    
+    .floating-astronaut-container {
+        display: none;
+    }
+}
+
+/* Responsive icon sizes */
+@media (max-width: 768px) {
+    .program-item [data-lucide] {
+        width: 60px !important;
+        height: 60px !important;
+    }
+    
+    .program-img > div {
+        height: 200px !important;
+    }
+}
+
+/* Responsive design for highlight box */
+@media (max-width: 768px) {
+    .about-highlight-box {
+        padding: 30px 25px !important;
+    }
+    
+    .about-highlight-box h5 {
+        font-size: 1.2rem;
+        text-align: center;
+        margin-bottom: 25px !important;
+    }
+    
+    .about-highlight-box li {
+        font-size: 0.95rem !important;
+        text-align: right;
+    }
+    
+    .highlight-rocket {
+        width: 24px !important;
+        height: 24px !important;
+    }
+    
+    .about-highlight-box [data-lucide="rocket"] {
+        width: 18px !important;
+        height: 18px !important;
+    }
+}
+
+/* FAQ Responsive Design */
+@media (max-width: 768px) {
+    .faq-title {
+        font-size: 2rem;
+    }
+    
+    .faq-main-icon {
+        width: 60px;
+        height: 60px;
+        padding: 15px;
+    }
+    
+    .faq-card-header {
+        padding: 20px 20px 10px 20px;
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+    
+    .faq-icon-wrapper {
+        width: 50px;
+        height: 50px;
+    }
+    
+    .faq-icon {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .faq-question {
+        font-size: 1.1rem;
+    }
+    
+    .faq-card-body {
+        padding: 0 20px 20px 20px;
+    }
+    
+    .faq-cta-card {
+        padding: 30px 20px;
+    }
+    
+    .faq-cta-btn-primary,
+    .faq-cta-btn-secondary {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+/* Responsive adjustments for astronaut animations */
+@media (max-width: 991.98px) {
+    .astronaut-animation {
+        display: none;
+    }
+    
+    .floating-astronaut-container {
+        top: 10px;
+        right: 10px;
+    }
+    
+    .floating-astronaut-gif {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .education-gif, .online-learning-gif {
+        max-width: 150px;
+        max-height: 120px;
+    }
+    
+    .custom-shape-divider-top-1753639774 svg, .custom-shape-divider-bottom-1753639774 svg {
+        height: 80px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .astronaut-gif {
+        width: 60px !important;
+        height: 60px !important;
+    }
+    
+    .floating-astronaut-gif {
+        width: 90px;
+        height: 90px;
+    }
+} 

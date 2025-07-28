@@ -1,0 +1,69 @@
+/* Button Styles */
+
+/* Override primary button colors */
+.btn-primary {
+    background-color: var(--ew-purple) !important;
+    border-color: var(--ew-purple) !important;
+    color: white !important;
+}
+
+.btn-primary:hover {
+    background-color: var(--ew-light-purple) !important;
+    border-color: var(--ew-light-purple) !important;
+    color: white !important;
+}
+
+/* Override secondary button colors */
+.btn-secondary {
+    background-color: var(--ew-yellow) !important;
+    border-color: var(--ew-yellow) !important;
+    color: var(--ew-purple) !important;
+    font-weight: 600;
+}
+
+.btn-secondary:hover {
+    background-color: #E6AF00 !important;
+    border-color: #E6AF00 !important;
+    color: var(--ew-purple) !important;
+}
+
+.btn-outline-primary {
+    color: var(--ew-purple) !important;
+    border-color: var(--ew-purple) !important;
+}
+
+.btn-outline-primary:hover {
+    background-color: var(--ew-purple) !important;
+    border-color: var(--ew-purple) !important;
+    color: white !important;
+}
+
+/* Social media buttons */
+.social-btn {
+    background-color: var(--ew-purple) !important;
+    border-color: var(--ew-purple) !important;
+}
+
+.social-btn:hover {
+    background-color: var(--ew-yellow) !important;
+    border-color: var(--ew-yellow) !important;
+    color: var(--ew-purple) !important;
+}
+
+/* WhatsApp CTA Button */
+.whatsapp-cta {
+    background: linear-gradient(45deg, #25D366, #20B358);
+    color: white;
+    font-weight: 600;
+    padding: 12px 30px;
+    border-radius: 50px;
+    border: none;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(37, 211, 102, 0.3);
+}
+
+.whatsapp-cta:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(37, 211, 102, 0.4);
+    color: white;
+} 

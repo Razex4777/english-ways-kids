@@ -1,0 +1,74 @@
+/* Astronaut Animations */
+
+/* Astronaut GIF Animation Navbar Styling */
+.astronaut-animation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+}
+
+.astronaut-animation:hover {
+    background: rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
+}
+
+.astronaut-gif {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+    object-fit: cover;
+}
+
+.astronaut-animation:hover .astronaut-gif {
+    transform: rotate(5deg);
+}
+
+/* Floating Astronaut in Top Right White Space */
+.floating-astronaut-container {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 10000;
+    pointer-events: none;
+}
+
+.floating-astronaut {
+    padding: 10px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    pointer-events: auto;
+    animation: float 3s ease-in-out infinite;
+}
+
+.floating-astronaut:hover {
+    background: rgba(255, 255, 255, 1);
+    transform: scale(1.1);
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.floating-astronaut-gif {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.floating-astronaut:hover .floating-astronaut-gif {
+    transform: rotate(10deg);
+}
+
+/* Adjust astronaut position when navbar is sticky */
+body.navbar-is-sticky .floating-astronaut-container {
+    top: 100px;
+    transition: top 0.4s ease;
+} 

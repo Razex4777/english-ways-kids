@@ -1,0 +1,67 @@
+<!-- Contact Form Modal -->
+<div class="modal fade" id="contactModal" tabindex="-1" aria-labelledby="contactModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content border-0 shadow-lg">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title" id="contactModalLabel">
+                    <i class="fab fa-whatsapp me-2"></i>احجز جلسة تجريبية
+                </h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body p-4">
+                <form id="whatsappContactForm">
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="userName" class="form-label fw-bold">الاسم *</label>
+                            <input type="text" class="form-control form-control-lg border-2 rounded-3" id="userName" placeholder="أدخل اسمك الكامل" required>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="userPhone" class="form-label fw-bold">رقم الهاتف *</label>
+                            <input type="tel" class="form-control form-control-lg border-2 rounded-3" id="userPhone" placeholder="مثال: 0501234567" required>
+                        </div>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <label for="childGender" class="form-label fw-bold">جنس الطفل *</label>
+                            <select class="form-select form-select-lg border-2 rounded-3" id="childGender" required>
+                                <option value="">اختر جنس الطفل</option>
+                                <option value="ولد">👦 ولد</option>
+                                <option value="بنت">👧 بنت</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <label for="childAge" class="form-label fw-bold">عمر الطفل</label>
+                            <select class="form-select form-select-lg border-2 rounded-3" id="childAge">
+                                <option value="">اختر عمر الطفل</option>
+                                <option value="3-5 سنوات">🧒 3-5 سنوات</option>
+                                <option value="6-8 سنوات">👦 6-8 سنوات</option>
+                                <option value="9-12 سنة">👧 9-12 سنة</option>
+                                <option value="13+ سنة">🧑 13+ سنة</option>
+                            </select>
+                    </div>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="userState" class="form-label fw-bold">المنطقة/المحافظة *</label>
+                        <input type="text" class="form-control form-control-lg border-2 rounded-3" id="userState" placeholder="مثال: الرياض، جدة، الدمام..." required>
+                    </div>
+                    
+                    <div class="mb-3">
+                        <label for="userMessage" class="form-label fw-bold">ملاحظات إضافية</label>
+                        <textarea class="form-control border-2 rounded-3" id="userMessage" rows="3" placeholder="أي تفاصيل إضافية تود مشاركتها..."></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer border-0 p-4">
+                <button type="button" class="btn btn-light border-2 px-4 py-2 rounded-3" data-bs-dismiss="modal">
+                    <i class="fas fa-times me-2"></i>إلغاء
+                </button>
+                <button type="button" class="btn btn-success btn-lg px-5 py-2 rounded-3 shadow" onclick="sendToWhatsApp()">
+                    <i class="fab fa-whatsapp me-2"></i>إرسال عبر واتساب
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Contact Form Modal End --> 

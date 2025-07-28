@@ -1,0 +1,166 @@
+/* Modal and Form Styles */
+
+/* WhatsApp Contact Modal Styles */
+.modal-content {
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 15px 50px rgba(0,0,0,0.15);
+    overflow: hidden;
+}
+
+.modal-header {
+    border-radius: 20px 20px 0 0;
+    border-bottom: none;
+    padding: 25px 30px;
+    background: linear-gradient(135deg, var(--ew-primary), var(--ew-secondary));
+}
+
+.modal-body {
+    padding: 30px;
+    background: #fafafa;
+}
+
+.modal-footer {
+    border-top: none;
+    padding: 20px 30px;
+    justify-content: space-between;
+    background: #fafafa;
+}
+
+.form-label {
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.form-control, .form-select {
+    border-radius: 12px;
+    border: 2px solid #e8ecef;
+    padding: 15px 20px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+    background: white;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: var(--ew-primary);
+    box-shadow: 0 0 0 0.3rem rgba(74, 144, 226, 0.15);
+    transform: translateY(-1px);
+}
+
+.form-control::placeholder {
+    color: #adb5bd;
+    font-style: italic;
+}
+
+/* Enhanced form select styles */
+.form-select {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23343a40' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m1 6 7 7 7-7'/%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 15px center;
+    background-size: 16px 12px;
+    cursor: pointer;
+}
+
+.form-select:focus {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%234a90e2' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='m1 6 7 7 7-7'/%3e%3c/svg%3e");
+}
+
+/* Enhanced Button Styles */
+.modal .btn-success {
+    background: linear-gradient(135deg, #25D366, #20c55e);
+    border: none;
+    padding: 15px 35px;
+    font-weight: 700;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 25px rgba(37, 211, 102, 0.3);
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.modal .btn-success:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 35px rgba(37, 211, 102, 0.4);
+    background: linear-gradient(135deg, #20c55e, #25D366);
+}
+
+.modal .btn-light {
+    background: #f8f9fa;
+    border: 2px solid #dee2e6;
+    padding: 12px 25px;
+    font-weight: 600;
+    border-radius: 15px;
+    transition: all 0.3s ease;
+    color: #6c757d;
+}
+
+.modal .btn-light:hover {
+    background: #e9ecef;
+    border-color: #adb5bd;
+    transform: translateY(-2px);
+    color: #495057;
+}
+
+/* Mobile Responsive Styles */
+@media (max-width: 768px) {
+    .modal-dialog {
+        margin: 10px;
+        max-width: calc(100% - 20px);
+}
+
+    .modal-header, .modal-body, .modal-footer {
+        padding: 20px;
+    }
+    
+    .modal-title {
+        font-size: 18px;
+    }
+    
+    .form-control, .form-select {
+        padding: 12px 15px;
+        font-size: 16px; /* Prevents zoom on iOS */
+    }
+    
+    .modal-footer {
+        flex-direction: column-reverse;
+        gap: 10px;
+    }
+    
+    .modal-footer .btn {
+        width: 100%;
+        padding: 15px;
+        font-size: 16px;
+    }
+    
+    .row .col-md-6 {
+        margin-bottom: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .modal-header, .modal-body, .modal-footer {
+        padding: 15px;
+    }
+    
+    .form-label {
+        font-size: 12px;
+    }
+    
+    .modal-title {
+        font-size: 16px;
+    }
+}
+
+/* Form validation styles */
+.form-control.is-invalid {
+    border-color: #dc3545;
+}
+
+.form-control.is-valid {
+    border-color: #28a745;
+} 

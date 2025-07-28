@@ -1,0 +1,39 @@
+<!-- Modal Video -->
+<div class="modal fade" id="videoModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered video-modal-dialog">
+        <div class="modal-content video-modal-content">
+            <div class="modal-header video-modal-header">
+                <div class="d-flex align-items-center">
+                    <img src="img/logos/English_way_kids.jpg" alt="English Way Kids" class="video-modal-logo me-3">
+                    <div>
+                        <h5 class="modal-title video-modal-title mb-0" id="exampleModalLabel">برنامج انجلش واي كيدز</h5>
+                        <small class="text-muted">English Way Kids Program</small>
+                    </div>
+                </div>
+                <button type="button" class="btn-close video-modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body video-modal-body p-0">
+                <!-- 9:16 aspect ratio for portrait video -->
+                <div class="video-container">
+                    <video class="video-player" id="video" controls poster="img/logos/English_way_kids.jpg" muted playsinline>
+                        <source id="videoSource" src="" type="video/mp4">
+                        متصفحك لا يدعم تشغيل الفيديو.
+                    </video>
+                    <div class="video-overlay-gradient"></div>
+                </div>
+            </div>
+            <div class="modal-footer video-modal-footer">
+                <div class="d-flex justify-content-between align-items-center w-100">
+                    <div class="video-info">
+                        <span class="text-primary fw-bold">تعلم الإنجليزية بطريقة ممتعة</span>
+                    </div>
+                    <div class="video-actions">
+                        <button type="button" class="btn btn-outline-secondary btn-sm" data-bs-dismiss="modal">
+                            <i class="fas fa-times me-1"></i>إغلاق
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> 

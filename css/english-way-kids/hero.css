@@ -1,0 +1,77 @@
+/* Hero Section Styles */
+
+/* Hero background with rotating images */
+.hero-gradient {
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Background swipe animation - Right to Left */
+.hero-gradient::before,
+.hero-gradient::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: transform 1.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.hero-gradient::before {
+    background-image: url('../../img/hero/hero_bg.png');
+    z-index: 1;
+    animation: backgroundSwipeOut 8s infinite;
+}
+
+.hero-gradient::after {
+    background-image: url('../../img/hero/hero_bg2.jpg');
+    z-index: 2;
+    transform: translateX(100%);
+    animation: backgroundSwipeIn 8s infinite;
+}
+
+/* Subtle overlay for text readability */
+.hero-gradient .container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+    border-radius: 15px;
+}
+
+.hero-gradient .container {
+    position: relative;
+    z-index: 10;
+}
+
+/* Hero text styling for better readability */
+.hero-gradient h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-gradient p {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+/* Hero logo styling */
+.hero-img-container img {
+    border-radius: 50% !important;
+    border: 5px solid var(--ew-yellow);
+    box-shadow: 0 8px 30px rgba(61, 0, 102, 0.4);
+    max-height: 300px !important;
+    width: 300px;
+    object-fit: cover;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+} 

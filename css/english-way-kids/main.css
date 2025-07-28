@@ -1,0 +1,43 @@
+/* English Way Kids - Main CSS File */
+/* This file imports all modular CSS components */
+
+/* 1. Variables and Root Styles */
+@import url('variables.css');
+
+/* 2. Color System */
+@import url('colors.css');
+
+/* 3. Button Styles */
+@import url('buttons.css');
+
+/* 4. Navigation */
+@import url('navbar.css');
+
+/* 5. Hero Section */
+@import url('hero.css');
+
+/* 6. Animations */
+@import url('animations.css');
+
+/* 7. Modals and Forms */
+@import url('modals.css');
+
+/* 8. Section Styles */
+@import url('sections.css');
+
+/* 9. FAQ Section */
+@import url('faq.css');
+
+/* 10. Footer */
+@import url('footer.css');
+
+/* 11. Astronaut Animations */
+@import url('astronaut.css');
+
+/* 12. Responsive Design */
+@import url('responsive.css');
+
+/* Global Styles */
+body {
+    font-family: 'Montserrat', sans-serif;
+} 

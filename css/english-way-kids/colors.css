@@ -1,0 +1,61 @@
+/* Color System Overrides */
+
+/* Text colors */
+.text-primary {
+    color: var(--ew-purple) !important;
+}
+
+.text-secondary {
+    color: var(--ew-yellow) !important;
+}
+
+/* Border colors */
+.border-primary {
+    border-color: var(--ew-purple) !important;
+}
+
+.border-secondary {
+    border-color: var(--ew-yellow) !important;
+}
+
+/* Background colors */
+.bg-primary {
+    background-color: var(--ew-purple) !important;
+}
+
+.bg-secondary {
+    background-color: var(--ew-yellow) !important;
+}
+
+.bg-light {
+    background-color: #F8F9FA !important;
+}
+
+/* Remove all pink references */
+* {
+    /* Override any pink colors */
+    color: inherit !important;
+}
+
+/* English Way Kids specific styling */
+.ew-gradient-text {
+    background: var(--ew-gradient);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-weight: 700;
+}
+
+/* Page header with purple gradient */
+.page-header {
+    background: var(--ew-gradient) !important;
+}
+
+/* Topbar styling */
+.topbar {
+    background: var(--ew-purple) !important;
+}
+
+.title-border-radius {
+    border-radius: 15px !important;
+} 
